@@ -102,12 +102,17 @@ class Node: Comparable, Hashable {
         var current: Node? = self
         var lastX = 0
         var lastY = 0
+        var color = "\u{001B}[0;37m"
         while current != nil {
             var drawing: String = ""
-            print("\u{001B}[0;33mmove \(nb): scoreF \(current!.score) G \(current!.cost) H \(current!.heuristic)")
+            print("\u{001B}[0;37mmove \(nb): scoreF \(current!.score) G \(current!.cost) H \(current!.heuristic)")
             for row in current!.state {
                 for column in row {
-                    drawing = drawing + String(describing: column) + " "
+                    color = "\u{001B}[0;37m"
+                    if (column == 0) {
+                        color = "\u{001B}[0;32m"
+                    }
+                    drawing = drawing + color + String(describing: column) + " "
                 }
                 drawing = drawing + "\n"
             }
