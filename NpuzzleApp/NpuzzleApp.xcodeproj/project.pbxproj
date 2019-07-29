@@ -1,0 +1,397 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC5F5B9F22EF10DC00923F3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5F5B9E22EF10DC00923F3F /* AppDelegate.swift */; };
+		FC5F5BA122EF10DC00923F3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5F5BA022EF10DC00923F3F /* ViewController.swift */; };
+		FC5F5BA422EF10DC00923F3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC5F5BA222EF10DC00923F3F /* Main.storyboard */; };
+		FC5F5BA922EF10DC00923F3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC5F5BA722EF10DC00923F3F /* LaunchScreen.storyboard */; };
+		FC5F5BBA22EF112B00923F3F /* ParseFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5F5BB222EF112B00923F3F /* ParseFile.swift */; };
+		FC5F5BBB22EF112B00923F3F /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5F5BB322EF112B00923F3F /* Generator.swift */; };
+		FC5F5BBC22EF112B00923F3F /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5F5BB422EF112B00923F3F /* Node.swift */; };
+		FC5F5BBD22EF112B00923F3F /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5F5BB522EF112B00923F3F /* Engine.swift */; };
+		FC5F5BBE22EF112B00923F3F /* Solvability.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5F5BB622EF112B00923F3F /* Solvability.swift */; };
+		FC5F5BBF22EF112B00923F3F /* Heuristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5F5BB722EF112B00923F3F /* Heuristic.swift */; };
+		FC5F5BC022EF112B00923F3F /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5F5BB822EF112B00923F3F /* PriorityQueue.swift */; };
+		FC5F5BC122EF112B00923F3F /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5F5BB922EF112B00923F3F /* Goal.swift */; };
+		FC5F5BC622EF113600923F3F /* SearchPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5F5BC222EF113600923F3F /* SearchPath.swift */; };
+		FC5F5BC722EF113600923F3F /* Algo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5F5BC322EF113600923F3F /* Algo.swift */; };
+		FC5F5BC822EF113600923F3F /* Greedy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5F5BC422EF113600923F3F /* Greedy.swift */; };
+		FC5F5BC922EF113600923F3F /* Astar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5F5BC522EF113600923F3F /* Astar.swift */; };
+		FC5F5BCF22EF157400923F3F /* SolveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5F5BCE22EF157400923F3F /* SolveViewController.swift */; };
+		FC5F5BD122EF169300923F3F /* PuzzleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5F5BD022EF169300923F3F /* PuzzleCell.swift */; };
+		FC5F5BD722EF571B00923F3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC5F5BD622EF571B00923F3F /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FC5F5B9B22EF10DC00923F3F /* NpuzzleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NpuzzleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC5F5B9E22EF10DC00923F3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FC5F5BA022EF10DC00923F3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FC5F5BA322EF10DC00923F3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC5F5BA822EF10DC00923F3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC5F5BAA22EF10DC00923F3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC5F5BB222EF112B00923F3F /* ParseFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseFile.swift; sourceTree = "<group>"; };
+		FC5F5BB322EF112B00923F3F /* Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
+		FC5F5BB422EF112B00923F3F /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		FC5F5BB522EF112B00923F3F /* Engine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
+		FC5F5BB622EF112B00923F3F /* Solvability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Solvability.swift; sourceTree = "<group>"; };
+		FC5F5BB722EF112B00923F3F /* Heuristic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Heuristic.swift; sourceTree = "<group>"; };
+		FC5F5BB822EF112B00923F3F /* PriorityQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriorityQueue.swift; sourceTree = "<group>"; };
+		FC5F5BB922EF112B00923F3F /* Goal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
+		FC5F5BC222EF113600923F3F /* SearchPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPath.swift; sourceTree = "<group>"; };
+		FC5F5BC322EF113600923F3F /* Algo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Algo.swift; sourceTree = "<group>"; };
+		FC5F5BC422EF113600923F3F /* Greedy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Greedy.swift; sourceTree = "<group>"; };
+		FC5F5BC522EF113600923F3F /* Astar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Astar.swift; sourceTree = "<group>"; };
+		FC5F5BCE22EF157400923F3F /* SolveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolveViewController.swift; sourceTree = "<group>"; };
+		FC5F5BD022EF169300923F3F /* PuzzleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleCell.swift; sourceTree = "<group>"; };
+		FC5F5BD622EF571B00923F3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC5F5B9822EF10DC00923F3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC5F5B9222EF10DC00923F3F = {
+			isa = PBXGroup;
+			children = (
+				FC5F5B9D22EF10DC00923F3F /* NpuzzleApp */,
+				FC5F5B9C22EF10DC00923F3F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC5F5B9C22EF10DC00923F3F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC5F5B9B22EF10DC00923F3F /* NpuzzleApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC5F5B9D22EF10DC00923F3F /* NpuzzleApp */ = {
+			isa = PBXGroup;
+			children = (
+				FC5F5BB022EF10EF00923F3F /* Core */,
+				FC5F5B9E22EF10DC00923F3F /* AppDelegate.swift */,
+				FC5F5BA022EF10DC00923F3F /* ViewController.swift */,
+				FC5F5BA222EF10DC00923F3F /* Main.storyboard */,
+				FC5F5BA722EF10DC00923F3F /* LaunchScreen.storyboard */,
+				FC5F5BAA22EF10DC00923F3F /* Info.plist */,
+				FC5F5BCE22EF157400923F3F /* SolveViewController.swift */,
+				FC5F5BD022EF169300923F3F /* PuzzleCell.swift */,
+				FC5F5BD622EF571B00923F3F /* Assets.xcassets */,
+			);
+			path = NpuzzleApp;
+			sourceTree = "<group>";
+		};
+		FC5F5BB022EF10EF00923F3F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FC5F5BB522EF112B00923F3F /* Engine.swift */,
+				FC5F5BB322EF112B00923F3F /* Generator.swift */,
+				FC5F5BB922EF112B00923F3F /* Goal.swift */,
+				FC5F5BB722EF112B00923F3F /* Heuristic.swift */,
+				FC5F5BB422EF112B00923F3F /* Node.swift */,
+				FC5F5BB222EF112B00923F3F /* ParseFile.swift */,
+				FC5F5BB822EF112B00923F3F /* PriorityQueue.swift */,
+				FC5F5BB622EF112B00923F3F /* Solvability.swift */,
+				FC5F5BB122EF110D00923F3F /* Algo */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FC5F5BB122EF110D00923F3F /* Algo */ = {
+			isa = PBXGroup;
+			children = (
+				FC5F5BC322EF113600923F3F /* Algo.swift */,
+				FC5F5BC522EF113600923F3F /* Astar.swift */,
+				FC5F5BC422EF113600923F3F /* Greedy.swift */,
+				FC5F5BC222EF113600923F3F /* SearchPath.swift */,
+			);
+			path = Algo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC5F5B9A22EF10DC00923F3F /* NpuzzleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC5F5BAD22EF10DC00923F3F /* Build configuration list for PBXNativeTarget "NpuzzleApp" */;
+			buildPhases = (
+				FC5F5B9722EF10DC00923F3F /* Sources */,
+				FC5F5B9822EF10DC00923F3F /* Frameworks */,
+				FC5F5B9922EF10DC00923F3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NpuzzleApp;
+			productName = NpuzzleApp;
+			productReference = FC5F5B9B22EF10DC00923F3F /* NpuzzleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC5F5B9322EF10DC00923F3F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Leo-taro FUJIMOTO";
+				TargetAttributes = {
+					FC5F5B9A22EF10DC00923F3F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FC5F5B9622EF10DC00923F3F /* Build configuration list for PBXProject "NpuzzleApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC5F5B9222EF10DC00923F3F;
+			productRefGroup = FC5F5B9C22EF10DC00923F3F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC5F5B9A22EF10DC00923F3F /* NpuzzleApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC5F5B9922EF10DC00923F3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC5F5BA922EF10DC00923F3F /* LaunchScreen.storyboard in Resources */,
+				FC5F5BD722EF571B00923F3F /* Assets.xcassets in Resources */,
+				FC5F5BA422EF10DC00923F3F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC5F5B9722EF10DC00923F3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC5F5BC722EF113600923F3F /* Algo.swift in Sources */,
+				FC5F5BBA22EF112B00923F3F /* ParseFile.swift in Sources */,
+				FC5F5BBD22EF112B00923F3F /* Engine.swift in Sources */,
+				FC5F5BBF22EF112B00923F3F /* Heuristic.swift in Sources */,
+				FC5F5BBC22EF112B00923F3F /* Node.swift in Sources */,
+				FC5F5BD122EF169300923F3F /* PuzzleCell.swift in Sources */,
+				FC5F5BBB22EF112B00923F3F /* Generator.swift in Sources */,
+				FC5F5BC622EF113600923F3F /* SearchPath.swift in Sources */,
+				FC5F5BC922EF113600923F3F /* Astar.swift in Sources */,
+				FC5F5BC022EF112B00923F3F /* PriorityQueue.swift in Sources */,
+				FC5F5BBE22EF112B00923F3F /* Solvability.swift in Sources */,
+				FC5F5BA122EF10DC00923F3F /* ViewController.swift in Sources */,
+				FC5F5BCF22EF157400923F3F /* SolveViewController.swift in Sources */,
+				FC5F5BC822EF113600923F3F /* Greedy.swift in Sources */,
+				FC5F5BC122EF112B00923F3F /* Goal.swift in Sources */,
+				FC5F5B9F22EF10DC00923F3F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FC5F5BA222EF10DC00923F3F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC5F5BA322EF10DC00923F3F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC5F5BA722EF10DC00923F3F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC5F5BA822EF10DC00923F3F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC5F5BAB22EF10DC00923F3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FC5F5BAC22EF10DC00923F3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC5F5BAE22EF10DC00923F3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NpuzzleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fujimoto-ryotaro.NpuzzleApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC5F5BAF22EF10DC00923F3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NpuzzleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fujimoto-ryotaro.NpuzzleApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC5F5B9622EF10DC00923F3F /* Build configuration list for PBXProject "NpuzzleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC5F5BAB22EF10DC00923F3F /* Debug */,
+				FC5F5BAC22EF10DC00923F3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC5F5BAD22EF10DC00923F3F /* Build configuration list for PBXNativeTarget "NpuzzleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC5F5BAE22EF10DC00923F3F /* Debug */,
+				FC5F5BAF22EF10DC00923F3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC5F5B9322EF10DC00923F3F /* Project object */;
+}

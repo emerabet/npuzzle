@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GhA-on-9GR">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Baseline standard spacing" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--NPUZZLE-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NpuzzleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nJI-IC-uOX">
+                                <rect key="frame" x="0.0" y="335" width="375" height="216"/>
+                            </pickerView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="N" translatesAutoresizingMaskIntoConstraints="NO" id="IVD-lh-PNz">
+                                <rect key="frame" x="84" y="121" width="206" height="206"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flU-yw-dfg">
+                                <rect key="frame" x="84" y="602" width="206" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uGs-o7-dYd"/>
+                                    <segue destination="vEq-gQ-Aj4" kind="show" id="OJ4-8L-a2u"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nJI-IC-uOX" firstAttribute="firstBaseline" secondItem="IVD-lh-PNz" secondAttribute="baseline" constant="8" symbolType="layoutAnchor" id="1m2-E6-iZO"/>
+                            <constraint firstItem="nJI-IC-uOX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="O9C-G0-wWU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="flU-yw-dfg" secondAttribute="bottom" constant="35" id="WUG-lA-PpP"/>
+                            <constraint firstItem="flU-yw-dfg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bLq-Ci-E4g"/>
+                            <constraint firstItem="IVD-lh-PNz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="57" id="lFw-ia-WFz"/>
+                            <constraint firstItem="IVD-lh-PNz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pE9-Sy-hTL"/>
+                            <constraint firstItem="nJI-IC-uOX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pPI-dD-Yoh"/>
+                            <constraint firstItem="flU-yw-dfg" firstAttribute="width" secondItem="IVD-lh-PNz" secondAttribute="width" id="x3B-8n-85E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="NPUZZLE" id="dG8-pD-imO"/>
+                    <connections>
+                        <outlet property="pickerView" destination="nJI-IC-uOX" id="5zL-QF-Du2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="68" y="-83.208395802098963"/>
+        </scene>
+        <!--NPUZZLE-->
+        <scene sceneID="EcP-PZ-ZWp">
+            <objects>
+                <viewController id="vEq-gQ-Aj4" customClass="SolveViewController" customModule="NpuzzleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oOb-ga-Fne">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="yme-vx-vMo">
+                                <rect key="frame" x="5" y="64" width="365" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="FfB-Wh-xBE">
+                                    <size key="itemSize" width="100" height="88"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="myCell" id="S8C-8K-Z6E" customClass="PuzzleCell" customModule="NpuzzleApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="88"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="88"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Yk-s3-AOH">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="88"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="0Yk-s3-AOH" firstAttribute="leading" secondItem="S8C-8K-Z6E" secondAttribute="leading" id="YPg-WL-0Xv"/>
+                                            <constraint firstAttribute="bottom" secondItem="0Yk-s3-AOH" secondAttribute="bottom" id="d5c-nn-em4"/>
+                                            <constraint firstItem="0Yk-s3-AOH" firstAttribute="top" secondItem="S8C-8K-Z6E" secondAttribute="top" id="jDX-XJ-4gF"/>
+                                            <constraint firstAttribute="trailing" secondItem="0Yk-s3-AOH" secondAttribute="trailing" id="m3w-3i-xCx"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="image" destination="0Yk-s3-AOH" id="Zmy-Aa-mf1"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yme-vx-vMo" firstAttribute="leading" secondItem="qcR-vN-TI0" secondAttribute="leading" constant="5" id="MAD-JQ-3Fg"/>
+                            <constraint firstItem="qcR-vN-TI0" firstAttribute="trailing" secondItem="yme-vx-vMo" secondAttribute="trailing" constant="5" id="OS7-MU-pq2"/>
+                            <constraint firstItem="qcR-vN-TI0" firstAttribute="bottom" secondItem="yme-vx-vMo" secondAttribute="bottom" id="aPF-bi-Oof"/>
+                            <constraint firstItem="yme-vx-vMo" firstAttribute="top" secondItem="qcR-vN-TI0" secondAttribute="top" id="b3z-CN-dti"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qcR-vN-TI0"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="NPUZZLE" id="EpV-0J-rz8">
+                        <barButtonItem key="rightBarButtonItem" title="Solve" id="7BV-x0-oCr">
+                            <connections>
+                                <action selector="solveButtonPressed:" destination="vEq-gQ-Aj4" id="eNt-dk-6pE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="yme-vx-vMo" id="QMY-ZD-RSt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gXG-0s-FzF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="893.60000000000002" y="-83.208395802098963"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Mad-df-OZ3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GhA-on-9GR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ymb-b4-lLc">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="A6k-pv-Zn7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UrX-u6-WgV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-919" y="-83"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="N" width="206" height="206"/>
+    </resources>
+</document>
