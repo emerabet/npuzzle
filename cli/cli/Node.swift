@@ -112,7 +112,7 @@ class Node: Comparable, Hashable {
                     if (column == 0) {
                         color = "\u{001B}[0;32m"
                     }
-                    drawing = drawing + color + String(describing: column) + " "
+                    drawing = drawing + color + String(describing: column) + "\u{001B}[0;37m "
                 }
                 drawing = drawing + "\n"
             }

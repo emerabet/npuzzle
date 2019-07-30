@@ -56,8 +56,6 @@ struct PriorityQueue {
         queue.swapAt(firstIndex, secondIndex)
     }
     
-    
-    
     mutating func goUp(index: Int) {
         let parentInd = parentIndex(of: index)
         if isHigherPriority(at: index, than: parentInd) {
@@ -89,12 +87,6 @@ struct PriorityQueue {
         return highestPriorityIndex(of: highestPriorityIndex(of: parent, and: leftChildIndex(of: parent)), and: rightChildIndex(of: parent))
     }
     
-    
-    mutating func enqueue(node: Node) {
-        queue.append(node)
-        goUp(index: queue.count - 1)
-    }
-    
     mutating func push(_ node: Node) {
         queue.append(node)
         goUp(index: queue.count - 1)
@@ -111,17 +103,4 @@ struct PriorityQueue {
         }
         return node
     }
-    
-    mutating func dequeue() -> Node? {
-        
-        guard !isEmpty
-            else {return nil}
-        swapElement(at: 0, with: queue.count - 1)
-        let node = queue.removeLast()
-        if !isEmpty {
-            goDown(index: 0)
-        }
-        return node
-    }
-    
 }

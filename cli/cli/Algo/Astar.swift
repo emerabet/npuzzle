@@ -37,9 +37,13 @@ class AstarStrategy : Algo, SearchPath {
                 if (child == goalNode) {
                     closedList[child.hash] = child
                     print("Done")
+                    let countOpen = openList.count
+                    let countClose = closedList.count
+                    openList.queue.removeAll()
+                    closedList.removeAll()
                     let moves = child.draw()
-                    print("Open list: ", openList.count)
-                    print("Close list: ", closedList.count)
+                    print("Open list: ", countOpen)
+                    print("Close list: ", countClose)
                     return moves
                 }
                 
