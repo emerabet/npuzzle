@@ -31,10 +31,9 @@ if !error {
             let engine = Engine(startState: state, goalState: goalState, storedGoalCoordinates: storedGoalCoordinates, choosenHeuristic: .MANHATTAN, choosenAlgorithm: .ASTAR, weight: argsWeight)
             let startTime = CFAbsoluteTimeGetCurrent()
             print("started")
-            let moves = engine.execute()
+            let _ = engine.execute(startTime: startTime)
             let timeElapsed = CFAbsoluteTimeGetCurrent() - startTime
             print("Time elapsed for : \(timeElapsed) s.")
-            print(moves)
         }
     } catch ParseError.parseError(let error){
         print(error)

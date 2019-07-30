@@ -17,8 +17,16 @@ class AstarStrategy : Algo, SearchPath {
         let goalNode = Node(state: goalState, parent: nil, zeroRow: goalX, zeroCol: goalY, cost: 0)
         var openList = PriorityQueue(queue: [root])
         var closedList = Dictionary<String, Node>()
-        
+        var nb: Int = 0
         while (!openList.isEmpty) {
+            if (nb % 50000 == 0) {
+                let timeElapsed = CFAbsoluteTimeGetCurrent() - startTime
+                if timeElapsed > 60 {
+                    print("taking too much time -> stopped")
+                    exit(0)
+                }
+            }
+            
             let currentNode = openList.pop()
             let children = currentNode!.getChildren(weight: self.weight, fnCalculHeuristic: self.fnChoosenHeuristic)
             
@@ -42,6 +50,7 @@ class AstarStrategy : Algo, SearchPath {
                 }
                 
             }
+            nb = nb + 1
         }
         return []
     }

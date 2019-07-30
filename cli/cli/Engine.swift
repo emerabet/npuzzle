@@ -38,13 +38,13 @@ class Engine {
     
     
 
-    func execute() -> [Move] {
+     func execute(startTime: CFAbsoluteTime) -> [Move] {
         var strategy: SearchPath?
         switch choosenAlgorithm {
         case .ASTAR:
-            strategy = AstarStrategy(startState: startState, goalState: &goalState, weight: weight, self.storedGoalCoordinates, choosenHeuristic: performHeuristic![choosenHeuristic]!)
+            strategy = AstarStrategy(startState: startState, goalState: &goalState, weight: weight, self.storedGoalCoordinates, choosenHeuristic: performHeuristic![choosenHeuristic]!, startTime: startTime)
         case .GREEDY:
-            strategy = GreedyStrategy(startState: startState, goalState: &goalState, weight: weight, self.storedGoalCoordinates, choosenHeuristic: performHeuristic![choosenHeuristic]!)
+            strategy = GreedyStrategy(startState: startState, goalState: &goalState, weight: weight, self.storedGoalCoordinates, choosenHeuristic: performHeuristic![choosenHeuristic]!, startTime: startTime)
         }
         return strategy!.execute()
     }

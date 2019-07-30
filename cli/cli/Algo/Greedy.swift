@@ -21,8 +21,15 @@ class GreedyStrategy : Algo, SearchPath {
         var found: Bool = false
         
         var currentNode: Node? = root
+        var nb: Int = 0
         while (!found && currentNode != nil) {
-            print("CURRENT", currentNode!.hash, currentNode!.score, currentNode!.cost, currentNode!.heuristic)
+            if (nb % 50000 == 0) {
+                let timeElapsed = CFAbsoluteTimeGetCurrent() - startTime
+                if timeElapsed > 60 {
+                    print("taking too much time -> stopped")
+                    exit(0)
+                }
+            }
 
             let children = currentNode!.getChildren(weight: self.weight, fnCalculHeuristic: self.fnChoosenHeuristic)
             
@@ -30,8 +37,6 @@ class GreedyStrategy : Algo, SearchPath {
             var bestChild: Node? = nil
             
             for child in children {
-                print("CHILD", child.hash, child.score, child.cost, child.heuristic)
-                
                 // if child is the solution we can stop
                 if (child == goalNode) {
                     found = true
@@ -56,6 +61,7 @@ class GreedyStrategy : Algo, SearchPath {
                 }
             }
             currentNode = bestChild
+            nb = nb + 1
         }
         return []
     }

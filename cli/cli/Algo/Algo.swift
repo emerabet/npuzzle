@@ -16,13 +16,15 @@ class Algo {
     let fnChoosenHeuristic: ([[Int]]) -> Int
     let storedGoalCoordinates: Dictionary<Int, (row: Int, col: Int)>
     var progress: Int = 0
+    var startTime: CFAbsoluteTime
     
-    init (startState: [[Int]], goalState: inout [[Int]], weight: Int, _ storedGoalCoordinates: Dictionary<Int, (row: Int, col: Int)>, choosenHeuristic: @escaping ([[Int]]) -> Int) {
+    init (startState: [[Int]], goalState: inout [[Int]], weight: Int, _ storedGoalCoordinates: Dictionary<Int, (row: Int, col: Int)>, choosenHeuristic: @escaping ([[Int]]) -> Int, startTime: CFAbsoluteTime) {
         self.startState = startState
         self.goalState = goalState
         self.size = startState.count - 1
         self.weight = weight
         self.fnChoosenHeuristic = choosenHeuristic
         self.storedGoalCoordinates = storedGoalCoordinates
+        self.startTime = startTime
     }
 }
